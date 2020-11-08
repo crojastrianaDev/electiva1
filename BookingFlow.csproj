@@ -63,6 +63,9 @@
   <ItemGroup>
     <Content Include="Vista\index.aspx" />
     <Content Include="Vista\index.css" />
+    <Content Include="Vista\reservar.aspx" />
+    <Content Include="Vista\Vuelos.aspx" />
+    <Content Include="Vista\vuelos.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +81,20 @@
     </Compile>
     <Compile Include="Vista\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\reservar.aspx.cs">
+      <DependentUpon>reservar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\reservar.aspx.designer.cs">
+      <DependentUpon>reservar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Vuelos.aspx.cs">
+      <DependentUpon>Vuelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Vuelos.aspx.designer.cs">
+      <DependentUpon>Vuelos.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

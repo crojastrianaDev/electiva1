@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="BookingFlow.Vista.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Vuelos.aspx.cs" Inherits="BookingFlow.Vista.Vuelos" %>
 
 <!DOCTYPE html>
 
@@ -29,52 +29,57 @@
         </div>
 
     </form>
-    <br />
-    <br />
+   
+    <div class="vuelos" >
 
-    <div class="container">
-        <div class="row">
-            <h1>Bienvenidos a BookingFlow la applicación donde encuntras tus vuelos al mejor precio </h1>
-            <img src="https://mochilerosentailandia.com/wp-content/uploads/2014/07/vuelos-internas-1.png" class="img-thumbnail" alt="Inicio" />
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">Los mejores precios</div>
-        <div class="col">Todas las Aerolineas</div>
-        <div class="col">100 % Seguro y confiable</div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card" style="width: 400px">
-                    <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
-                    <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
+        <div class="card">
+            <div class="card-body">
+                <<div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <asp:DropDownList class="dropdown-item" ID="origen" runat="server"></asp:DropDownList>
+                        </div>
+                        <div class="col-sm">
+                            <asp:DropDownList class="dropdown-item" ID="destino" runat="server"></asp:DropDownList>
+                        </div>
+                        <div class="col-sm">
+                            <asp:Calendar ID="date" runat="server"></asp:Calendar>
+                        </div>
+                        <div class="center">
+                            <asp:Button class="btn btn-secondary" ID="btnBuscarVuelo" runat="server" Text="Buscar Vuelo" />
+                        </div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-sm-6">
-                <div class="card" style="width: 400px">
-                    <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
-                    <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
+        
     </div>
+    
+    <div class="container">
 
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Origen</th>
+                    <th scope="col">Destino</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Popayán/th>
+                    <td>Bogotá</td>
+                    <td>2020/05/11</td>
+                    <td>
+                        <asp:Button class="btn btn-secondary" ID="Continuar" runat="server" Text="Continuar" />
 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
+    </div>
 
 
 
